@@ -1,0 +1,19 @@
+{
+  "name": "ynov_node_test2",
+  "version": "1.0.0",
+  "description": "Ynov nodejs second test project",
+  "main": "launch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspirecya/ynov_nodejs2.git"
+  },
+  "author": "Wassim MATOUGUI, Sumeet SINGH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aspirecya/ynov_nodejs2/issues"
+  },
+  "homepage": "https://github.com/aspirecya/ynov_nodejs2#readme"
+}
