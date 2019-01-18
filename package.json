@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/aspirecya/ynov_nodejs2/issues"
   },
-  "homepage": "https://github.com/aspirecya/ynov_nodejs2#readme"
+  "homepage": "https://github.com/aspirecya/ynov_nodejs2#readme",
+  "dependencies": {
+    "mongoose": "^5.4.4",
+    "ntl": "^3.0.0"
+  }
 }
