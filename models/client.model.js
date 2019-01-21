@@ -13,5 +13,5 @@ let clientSchema =  new Schema ({
     prospect : Boolean
 });
 
-// export schema to mongodb database
+//export schema to mongodb database
 module.exports = mongoose.model('Client', clientSchema);
