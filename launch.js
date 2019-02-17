@@ -41,3 +41,9 @@ Client.find({}, (err, clients) => {
         });
     });
 });
+
+app.post('/api/client', clientController.createClient);
+app.get('/api/client', clientController.getClient);
+app.get('/api/client/:id', clientController.getClientById);
+app.put('/api/product/update/:id', clientController.updateClient)
+app.get('/api/product/delete/:id', clientController.deleteClient);

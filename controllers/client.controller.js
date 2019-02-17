@@ -17,7 +17,7 @@ exports.createClient = function(req, res) {
 
     client.save((err)=> {
         if(err) {
-            console.log('[LOG] Client creation faioure, see logs for more infos.');
+            console.log('[LOG] Client creation failure, see logs for more infos.');
             console.log(err);
         }  else {
             console.log('[LOG] Client created.');
@@ -27,3 +27,35 @@ exports.createClient = function(req, res) {
         res.send(client);
     })
 };
+
+exports.getClient = (req,res) => {
+    Client.find((err, client)=> {
+      if (err){
+        console.log(err);
+      }
+      res.send(client);
+    })
+  }
+
+  exports.updateClient = (req,res) => {
+    Client.findByIdAndUpdate(req.params.id,req.body, function(err, client){
+      if(err){
+        console.log(err);
+      }
+      else {
+        res.send(client);
+      }
+    })
+  }
+
+  exports.deleteClient = (req,res) => {
+    Client.findOneAndDelete({ _id : req.params.id }, (err, client) => {
+      if(err) {
+        console.log(err);
+      } else { 
+        console.log("CLIENT DELETE SUCCESSFUL");
+        res.redirect('/api/client');
+      }
+    })
+  }
+
