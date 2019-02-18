@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form class="form-horizontal" method='post' action='/api/invoice/create'  enctype='application/x-www-form-urlencoded'>
+    <fieldset>
+
+
+        <legend>Créer une facture</legend>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">ID facture</label>
+            <div class="col-md-4">
+                <input name="num" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Nom du client</label>
+            <div class="col-md-4">
+                <input name="name" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Prestation fournie</label>
+            <div class="col-md-4">
+                <input name="presta" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Nombre d'heures facturées</label>
+            <div class="col-md-2">
+                <input name="heure" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Coût horaire</label>
+            <div class="col-md-4">
+                <input name="cout" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">TVA applicable</label>
+            <div class="col-md-4">
+                <input name="tva" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="go" type="submit" class="btn btn-primary">Creer</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+
+</body>
+</html>

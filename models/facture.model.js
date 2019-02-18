@@ -3,7 +3,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let factureSchema =  new Schema ({
-    factNum : Number,
+    factNum : String,
+    factName : String,
+    factPresta : String,
+    factHeure : String,
+    factCout : String,
+    factTVA : String,
+    totalHT : String,
     totalTTC : String
 });
 

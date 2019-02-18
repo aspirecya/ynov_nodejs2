@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form class="form-horizontal" method='post' action='/api/notes/create'  enctype='application/x-www-form-urlencoded'>
+    <fieldset>
+
+
+        <legend>Créer un client</legend>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Nom</label>
+            <div class="col-md-4">
+                <input name="name" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textarea">Note</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="note"></textarea>
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="go" type="submit" class="btn btn-primary">Creer</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+
+</body>
+</html>

@@ -3,14 +3,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let clientSchema =  new Schema ({
-    nom : Number,
+    nom : String,
     adresse : String,
     cp : String,
-    ville : Number,
-    referentId : Number,
-    tel : Number,
+    ville : String,
+    referent : String,
+    tel : String,
     mail : String,
-    prospect : Boolean
+    prospect : String
 });
 
 //export schema to mongodb database

@@ -4,9 +4,8 @@
   "description": "Ynov nodejs second test project",
   "main": "launch.js",
   "scripts": {
-    "prestart": "./config/init.config.js",
     "start": "ntl",
-    "run": "nodemon launch.js"
+    "server run": "nodemon launch.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   "homepage": "https://github.com/aspirecya/ynov_nodejs2#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dateformat": "^3.0.3",
     "express": "^4.16.4",
     "mkdirp": "^0.5.1",
     "mongoose": "^5.4.4",

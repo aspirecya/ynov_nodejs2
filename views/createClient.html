@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form class="form-horizontal" method='post' action='/api/client/create'  enctype='application/x-www-form-urlencoded'>
+    <fieldset>
+
+
+        <legend>Créer un client</legend>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Nom</label>
+            <div class="col-md-4">
+                <input name="nom" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Adresse</label>
+            <div class="col-md-4">
+                <input name="adresse" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Code postal</label>
+            <div class="col-md-2">
+                <input name="cp" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Ville</label>
+            <div class="col-md-4">
+                <input name="ville" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Réferent</label>
+            <div class="col-md-4">
+                <input name="referent" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Tel</label>
+            <div class="col-md-4">
+                <input name="tel" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Mail</label>
+            <div class="col-md-4">
+                <input name="mail" type="text" class="form-control input-md">
+
+            </div>
+        </div>
+        </br>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="radios">Prospect</label>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input type="radio" name="prospect" id="radios-0" value="oui" checked="checked">
+                    oui
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input type="radio" name="prospect" id="radios-1" value="non">
+                    non
+                </label>
+            </div>
+        </div>
+        </br>cl
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="go" type="submit" class="btn btn-primary">Creer</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+
+</body>
+</html>

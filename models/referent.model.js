@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let referentSchema =  new Schema ({
-    id : Number,
     nom : String,
     prenom : String,
     poste : String
