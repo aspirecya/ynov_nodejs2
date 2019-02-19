@@ -38,7 +38,7 @@ app.listen(serverPort, () => {
 
 // routes
 app.get('/', (req, res) => {
-    res.send(`Bienvenue sur votre API de gestion.`);
+    res.sendFile(__dirname + '/views/home.html');
 });
 
 app.get('/createclient', function (req, res) {
